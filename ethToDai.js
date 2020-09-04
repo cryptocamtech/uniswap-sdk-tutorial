@@ -36,15 +36,13 @@ const daiAddress = '0x6B175474E89094C44Da98b954EedeAC495271d0F';
 const chainId = ChainId.MAINNET;
 
 const init = async () => {
-    // pick who your provider is
-    const provider = new ethers.getDefaultProvider(url, { 
-            infura: process.env.INFURA_PROJECT_ID // need this to stop nasty warnings
-        });
+    // pick who your provider
+    const provider = new ethers.providers.JsonRpcProvider(url);
 
     const dai = await Fetcher.fetchTokenData(chainId, daiAddress, provider, "DAI", "Dai Stablecoin");
     console.log(util.inspect(dai));
     const weth = WETH[chainId];
-    const pair = await Fetcher.fetchPairData(dai, weth, provider);
+    const pair = await Fetcher.fetchPairData(dai, weth, provider); // use the provider, otherwise you'll get a warning
     const route = new Route([pair], weth);
 
     // swap 1 ether

@@ -1,6 +1,6 @@
 # Uniswap V2 Tutorial
 
-A Uniswap V2 SDK tutorial that swaps Ether for DIA using a forked mainnet 
+A Uniswap V2 SDK tutorial that swaps Ether for DAI using a forked mainnet 
 
 The code can be downloaded from https://github.com/cryptocamtech/uniswap-sdk-tutorial
 
