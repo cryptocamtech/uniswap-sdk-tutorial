@@ -9,10 +9,11 @@ Preparation:
     cp env .env  
     // update variables in .env as appropriate  
     npm update
+    chmod a+x ./fork_main.sh
 ```
 
 And run
 ```
-    fork_main.sh 
+    ./fork_main.sh 
     node ethToDai.js
 ```

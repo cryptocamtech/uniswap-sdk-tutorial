@@ -2,7 +2,9 @@
   "name": "uniswap-sdk-tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "ethToDai.js",
+  "author": "Crypto Cam Tech",
+  "repository": "https://github.com/cryptocamtech/uniswap-sdk-tutorial",
+  "homepage": "https://cryptocam.tech/",
   "dependencies": {
     "@ethersproject/contracts": "^5.0.2",
     "@ethersproject/providers": "^5.0.5",
@@ -15,8 +17,5 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
