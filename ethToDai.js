@@ -93,7 +93,7 @@ const init = async () => {
         { 
             value: inputAmountHex, 
             gasPrice: gasPrice.toHexString(),
-            gasLimit: ethers.BigNumber.from(150000).toHexString()
+            gasLimit: ethers.BigNumber.from(1500000).toHexString()
         }
     );
 
