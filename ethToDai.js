@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2020, Cameron Hamilton-Rich
+    Copyright (c) 2021, Cameron Hamilton-Rich
 
     Permission to use, copy, modify, and/or distribute this software for any
     purpose with or without fee is hereby granted, provided that the above
@@ -93,7 +93,7 @@ const init = async () => {
         { 
             value: inputAmountHex, 
             gasPrice: gasPrice.toHexString(),
-            gasLimit: ethers.BigNumber.from(1500000).toHexString()
+            gasLimit: ethers.BigNumber.from(500000).toHexString()
         }
     );
 
